@@ -1,4 +1,4 @@
-﻿//
+﻿//общее определение
 abstract class AbstractFactory
 {
     public abstract AbstractProductA CreateProductA();
@@ -47,4 +47,11 @@ class Client
         this.abstractProductA = factory.CreateProductA();
         this.abstractProductB = factory.CreateProductB();
     }
+    public void Run()
+    {
+
+    }
 }
+
+//эльфы - летают и стреляет из лука
+//орк - бегает и управляет мячем
