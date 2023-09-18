@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleSinglton", "ConsoleS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WFSinglton", "WFSinglton\WFSinglton.csproj", "{2C47001D-9C4C-4731-A11C-08BF66BB6F9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "factoryMethodProject", "factoryMethodProject\factoryMethodProject.csproj", "{8C2A468E-165F-403D-A242-DE39A10B5002}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "factoryMethodProject", "factoryMethodProject\factoryMethodProject.csproj", "{8C2A468E-165F-403D-A242-DE39A10B5002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{85691B83-290D-4765-BA40-D9A37D21E969}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8C2A468E-165F-403D-A242-DE39A10B5002}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C2A468E-165F-403D-A242-DE39A10B5002}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C2A468E-165F-403D-A242-DE39A10B5002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85691B83-290D-4765-BA40-D9A37D21E969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85691B83-290D-4765-BA40-D9A37D21E969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85691B83-290D-4765-BA40-D9A37D21E969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85691B83-290D-4765-BA40-D9A37D21E969}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
