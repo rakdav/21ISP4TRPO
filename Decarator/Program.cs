@@ -1,6 +1,4 @@
-﻿using System.Net.Http.Headers;
-
-Pizza pizza1 = new ItalianPizza("Итальянская пицца");
+﻿Pizza pizza1 = new ItalianPizza("Итальянская пицца");
 pizza1=new TomatoPizza(pizza1);
 Console.WriteLine($"Название:{pizza1.Name}");
 Console.WriteLine($"Стоимость:{pizza1.GetCost()}");
