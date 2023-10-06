@@ -1,4 +1,20 @@
-﻿abstract class Pizza
+﻿using System.Net.Http.Headers;
+
+Pizza pizza1 = new ItalianPizza("Итальянская пицца");
+pizza1=new TomatoPizza(pizza1);
+Console.WriteLine($"Название:{pizza1.Name}");
+Console.WriteLine($"Стоимость:{pizza1.GetCost()}");
+
+Pizza pizza2 = new ItalianPizza("Итальянская пицца");
+pizza2 = new CheesePizza(pizza2);
+Console.WriteLine($"Название:{pizza2.Name}");
+Console.WriteLine($"Стоимость:{pizza2.GetCost()}");
+
+Pizza pizza3 = new GermanPizza("Немецкая пицца");
+pizza3 = new TomatoPizza(pizza3);
+Console.WriteLine($"Название:{pizza3.Name}");
+Console.WriteLine($"Стоимость:{pizza3.GetCost()}");
+abstract class Pizza
 {
     protected Pizza(string name)
     {
