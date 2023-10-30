@@ -1,5 +1,5 @@
 ﻿//формальное определение
-//using System.Collections;
+using System.Collections;
 //Client clent=new Client();
 //clent.Main();
 //class Client
