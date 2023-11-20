@@ -41,7 +41,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandProject", "CommandPr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorProject", "IteratorProject\IteratorProject.csproj", "{0EFFDF32-C69A-4E71-86BA-AF1AB7E44E63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateTemplate", "StateTemplate\StateTemplate.csproj", "{79D669CB-6A70-429D-8AB9-3090E7AFC4DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StateTemplate", "StateTemplate\StateTemplate.csproj", "{79D669CB-6A70-429D-8AB9-3090E7AFC4DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{960E4718-B6D0-4283-9256-319A77C9FD52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{79D669CB-6A70-429D-8AB9-3090E7AFC4DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79D669CB-6A70-429D-8AB9-3090E7AFC4DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79D669CB-6A70-429D-8AB9-3090E7AFC4DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{960E4718-B6D0-4283-9256-319A77C9FD52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{960E4718-B6D0-4283-9256-319A77C9FD52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{960E4718-B6D0-4283-9256-319A77C9FD52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{960E4718-B6D0-4283-9256-319A77C9FD52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
