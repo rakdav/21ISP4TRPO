@@ -30,6 +30,20 @@
 //}
 
 //x+y-z
+Console.Write("Введите x:");
+int x = int.Parse(Console.ReadLine()!);
+Console.Write("Введите y:");
+int y = int.Parse(Console.ReadLine()!);
+Console.Write("Введите z:");
+int z = int.Parse(Console.ReadLine()!);
+Context context = new Context();
+context.SetVariable("x", x);
+context.SetVariable("y", y);
+context.SetVariable("z", z);
+IExpression add = new AddExpression(new NumberExpression("x"),
+    new NumberExpression("y"));
+IExpression sub = new SubExpression(add, new NumberExpression("z"));
+Console.WriteLine($"{x}+{y}-{z}={sub.Interpret(context)}");
 class Context
 {
     Dictionary<string, int> variable;
@@ -55,7 +69,7 @@ interface IExpression
 }
 class NumberExpression : IExpression
 {
-    string name;
+    private string name;
 
     public NumberExpression(string name)
     {
@@ -79,6 +93,21 @@ class AddExpression : IExpression
     public int Interpret(Context context)
     {
         return leftExpression.Interpret(context)+
+            rightExpression.Interpret(context);
+    }
+}
+class SubExpression : IExpression
+{
+    IExpression leftExpression;
+    IExpression rightExpression;
+    public SubExpression(IExpression left, IExpression right)
+    {
+        this.leftExpression = left;
+        this.rightExpression = right;
+    }
+    public int Interpret(Context context)
+    {
+        return leftExpression.Interpret(context) -
             rightExpression.Interpret(context);
     }
 }
